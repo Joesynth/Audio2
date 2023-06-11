@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="icon" href="#.png">
+	<link rel="stylesheet" href="#.css"/>
+	<script src="#/#.js"></script>
+</head>
+<body>
+
+
+		
+		<audio src="a.mp3" id="toca"></audio>		
+		<button id="tecla">Play</button>
+
+<p>Note que se apertarmos o botão enquanto o som toca será preciso primeiro terminar pra só depois tocar de novo.</p>
+
+		<script>
+
+		function tocaSom() {
+			document.querySelector('#toca').play();	/* poderia ser selecionado por um id="" na tag audio */
+		}
+		
+		document.querySelector('#tecla').onclick = tocaSom; /* poderia ser selecionado por um id="" na tag button */
+
+
+
+
+		
+		</script>
+	
+</body>
+</html>
